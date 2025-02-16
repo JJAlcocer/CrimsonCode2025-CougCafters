@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+// App.js
+import React from 'react';
 import './App.css';
+import ExternalLinkButton from './components/ExternalLinkButton';
+
+//Test
+function ExternalLinkButton({ href, children, ...rest }) {
+    console.log("Button rendered!", href, children, rest);
+    return ( 0 );
+}
+//
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <ExternalLinkButton
+                href="https://open.spotify.com"
+                className="spotify-button"
+                style={{ backgroundColor: '#1DB954', color: 'white', padding: '10px 20px', borderRadius: '5px', textDecoration: 'none' }}
+            >
+                Connect to Spotify
+            </ExternalLinkButton>
+        </div>
+    );
 }
 
 export default App;

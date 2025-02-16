@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+.spotify-button {
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #198734;
+}
+
+.my-custom-button{
+  background-color: blue;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+}

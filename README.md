@@ -3,6 +3,7 @@ Description: Generates music based of keyword inputs and song selection (from a 
 Programs Used and for What:
   Frontend Website: React, JavaScript
   Backend:
-    Music Generator: Google Mubert, JavaScript Object Notation
+    Music Generator: Google's' Magenta Music Generator, Python
+		Configuration File: MusicAVE
     Image Generator: Stable Diffusion, Python
     Song Connector: Spotify, JavaScript
